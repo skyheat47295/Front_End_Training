@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lunch Menu</title>
+
+    </head>
+    <body>
+    <table>
+        <thead>
+        <h1>What's for lunch</h1>
+            <tr>   
+                <th align="left" width="200">Menu Item</th>
+                <th align="left" width="200">Price</th>
+                <th align="left" width="200">Reviews</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tuna</td>
+                <td>$1.50</td>
+                <td>***</td>
+            </tr>
+            <tr>
+                <td>Spaghetti</td>
+                <td>$1.25</td>
+                <td>****</td>
+            </tr>
+            <tr>
+                <td>Hamburger</td>
+                <td>$1.50</td>
+                <td>**</td>
+            </tr>
+            <tr>
+                <td>Cheeseburger</td>
+                <td>$1.75</td>
+                <td>*****</td>
+            </tr>
+        </tbody>
+    </table>
+    </body>
+        <form action="practice_form.html" method="POST">
+            <h1 align="center">Please choose menu item:</h1>
+            <section class="menu">
+                <label for="dish">Please select menu item:</label>
+                <input type="text" name="dish" id="dish">
+            </section>
+            <section class="dishes">
+                <label for="dishes">How many dishes would you like?</label>
+                <input type="number" name="dishes" id="dishes">
+            </section>
+            <section class="cooked">
+                <label for="heated">Hot or cold?</label>
+                <br>
+                <label for="yes">Yes</label>
+                <input type="radio" name="heated" id="yes" value="yes">
+                <label for="no">No</label>
+                <input type="radio" name="heated" id="no" value="no">
+            </section>
+            <section class="napkin-type">
+                <label for="napkin">What type of napkin would you like?</label>
+                <input list="napkins" id="napkin-type" name="napkin_type">
+                <datalist id="napkins">
+                    <option value="cloth"></option>
+                    <option value="paper"></option>
+                </datalist>
+            </section>
+            <section class="submission">
+                <input type="submit" value="Confirm">
+            </section>
+
+        </form>
+        
+</html>

@@ -1,7 +1,24 @@
+* {
+    background-color: black;
+}
+
 h1 {
     color: green;
 }
 
 label {
-    color: blue;
+    color:cyan
+}
+th {
+    color:cornflowerblue;
+    text-align: left;
+    width: 200px;
+}
+
+td {
+    color:lawngreen;
+}
+
+input {
+    background-color: lightgrey;
 }

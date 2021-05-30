@@ -1,14 +1,14 @@
 * {
     background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 h1 {
     color: green;
 }
 
-label {
-    color:cyan
-}
 th {
     color:cornflowerblue;
     text-align: left;
@@ -17,8 +17,19 @@ th {
 
 td {
     color:lawngreen;
+    text-align: left;
+}
+
+label {
+    color:cyan
 }
 
 input {
     background-color: lightgrey;
+
+}
+footer {
+    background-image: url('../resources/sliders.jfif');
+    background-size: cover;
+    height: 900px;
 }

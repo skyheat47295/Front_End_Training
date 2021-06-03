@@ -20,14 +20,33 @@ td {
     text-align: left;
 }
 
+td:hover {
+    background:yellow;
+    color: rgb(231, 26, 26);
+}
+
 label {
-    color:cyan
+    color:cyan;
+    width: 400px;
+    text-align: left;
+    display: inline-block;
 }
 
 input {
     background-color: lightgrey;
+}    
 
+.cooked {
+    position: relative;;
+    left: -18.5px;
+}   
+
+.radio {
+    position: relative;
+    left: 20px;
+    width: 20px;
 }
+
 footer {
     background-image: url('../resources/sliders.jfif');
     background-size: cover;

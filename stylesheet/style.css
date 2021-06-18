@@ -66,7 +66,8 @@ input {
     height: 65px;
     width: 30%;
     box-shadow: 0 5px 8px 0 rgba(231, 16, 16, 0.2), 0 7px 20px 0 rgb(224, 19, 19);
-    
+    animation-name: modalopen;
+    animation-duration: 1s;
 }
 
 .modal-content{
@@ -74,7 +75,7 @@ input {
     margin: 0% 0%;
     height: 65px;
     color: white;
-}
+    }
 
 .closeBtn {
     background-color: rgb(54, 54, 63);
@@ -106,4 +107,9 @@ footer {
     background-image: url('../resources/sliders.jfif');
     background-size: cover;
     height: 900px;
+}
+
+@keyframes modalopen {
+    from { opacity: 0;}
+    to { opacity: 1;}
 }

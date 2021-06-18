@@ -10,7 +10,6 @@ const closeX = document.getElementById('closeX');
 modalBtn.addEventListener('click', openModal);
 closeBtn.addEventListener('click', closeModal);
 closeX.addEventListener('click', closeModal);
-window.addEventListener('click', outsideClick);
 
 // Function to open modal
 function openModal() {
@@ -20,10 +19,4 @@ function openModal() {
 // Function to close modal
 function closeModal() {
     modal.style.display = 'none';
-}
-
-// Function to close modal if outside click
-function outsideClick(e) {
-    if (e.target == modal)
-        modal.style.display = 'none';
 }

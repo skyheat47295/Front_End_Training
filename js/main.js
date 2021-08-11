@@ -11,18 +11,16 @@ modalBtn.addEventListener('click', openModal);
 closeBtn.addEventListener('click', closeModal);
 closeX.addEventListener('click', closeModal);
 modal.addEventListener('keydown', function(event) {
-    if (event.key == 'Tab') {
-        document.getElementById("closeBtn").focus();
-      alert('what');
-    }
+    if (event.key == 'Escape' || event.key == 'Enter') {
+        closeModal();
+        }
     });
 
 // Function to open modal
 function openModal() {
     modal.style.display = 'block';
-    //ally.maintain.tabFocus({
-    //    filter: 'simpleModal'});
-}
+    closeBtn.focus();
+    } 
 
 // Function to close modal
 function closeModal() {

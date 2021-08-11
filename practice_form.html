@@ -3,6 +3,7 @@
     <head>
         <link href="./stylesheet/style.css" rel="stylesheet">
         </link>
+        <script src="node_modules\ally.js\ally.min.js"></script>
         <script src="//widget.simplybook.me/v2/widget/widget.js"></script>
         <script src="/js/book.js"></script>
         <script>var Defer = []; document.addEventListener('DOMContentLoaded', function() { while (Defer.length) Defer.shift().call(); }); </script>
@@ -68,19 +69,19 @@
                     <option value="paper"></option>
                 </datalist>
             </section>
-            <section class="submission">
-                <input type="submit" value="Confirm">
+            <!--<section class="submission">
+                <input type="submit" value="Confirm" display="none">
                 
-            </section>
+            </section>-->
             
         </form>
         <button id="modalBtn" class="button">Click Here</button>
         <div id="simpleModal" class="modal">
             <div class="modal-content">
-                <span id="closeX" class="closeX">&times;</span>
+                <span id="closeX" tabindex="0" class="closeX">&times;</span>
                 <p class="modal-content">Are you sure you want it cooked?<br>
                     you might burn your mouth!
-                    <br><span id="closeBtn" class="closeBtn">Close</span>
+                    <br><span id="closeBtn" tabindex="0" class="closeBtn">Close</span>
                 </p>
                 </div>
         </div>
